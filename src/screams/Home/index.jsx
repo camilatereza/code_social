@@ -1,20 +1,20 @@
+import React, { useState } from "react";
+
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import React from "react";
+
+import Checkbox from "expo-checkbox";
 import {
     Text,
     View
 } from "react-native";
-import { sortCommands } from "../../utils/commands";
 
+import { sortCommands } from "../../utils/commands";
 import { Styles } from "./styles";
 
 export function Home() {
     const tab = createBottomTabNavigator();
+    const [isChecked, setChecked] = useState(false);
 
-    // const command = [];
-    // for (let i = 0; i < sortCommands().length; i++) {
-    //     command.add;
-    // }
     return (
         <View style={Styles.container}>
 
@@ -29,21 +29,25 @@ export function Home() {
             <View
                 //painel sorteador de comandos do jogo
                 style={Styles.commands}
-            >
-                {
-                    sortCommands().map(
-                        (item, index) => {
-                            return (
-                                <View incolun key={index}>
-                                    <Text style={Styles.commands_data}>
-                                        {item.text}
-                                    </Text>
-                                </View>
-                            );
-                        }
-                    )
+            >{
+                    sortCommands().map((item, index) => {
+                        return (
+                            <View
+                                incolun
+                                key={index}
+                                flexDirection={'row'}
+                            ><Checkbox
+                                    style={Styles.checkBox}
+                                    value={isChecked}
+                                    onChange={setChecked}
+                                />
+                                <Text style={Styles.commands_data}>
+                                    {item.text}
+                                </Text>
+                            </View>
+                        );
+                    })
                 }
-
             </View>
         </View>
     )

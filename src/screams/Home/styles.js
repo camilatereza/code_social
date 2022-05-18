@@ -25,21 +25,25 @@ export const Styles = StyleSheet.create({
         marginBottom: 32,
         marginTop: 107
     },
-    commands:{
+    commands: {
         //estilo do painel de comandos
         backgroundColor: '#AE91E1',
-        width: '55%',
-        height: '40%',
+        width: '75%',
+        height: '50%',
         margin: 85,
         borderRadius: 20,
-        justifyContent: 'center' 
+        justifyContent: 'center',
     },
     commands_data: {
         //estilo dos comandos
         color: theme.colors.heading,
         fontFamily: theme.fonts.text,
-        fontSize: 16,
-        margin: 4,
+        fontSize: 20,
+        margin: 5,
         marginVertical: 5
+    },
+    checkBox: {
+        margin: 8,
+        color: '#4630EB'
     }
 })
