@@ -1,19 +1,19 @@
-import React, { useState } from "react";
-
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { useState } from "react";
 
 import Checkbox from "expo-checkbox";
 import {
+    GestureResponderEvent,
+    Button,
     Text,
     View
 } from "react-native";
 
 import { sortCommands } from "../../utils/commands";
 import { Styles } from "./styles";
+import { useNavigation } from "@react-navigation/native";
+// import { useNavigation } from "@react-navigation/native";
 
 export function Home() {
-    const tab = createBottomTabNavigator();
-    const [isChecked, setChecked] = useState(false);
 
     return (
         <View style={Styles.container}>
@@ -31,6 +31,7 @@ export function Home() {
                 style={Styles.commands}
             >{
                     sortCommands().map((item, index) => {
+                        const [isChecked, setChecked] = useState(false);
                         return (
                             <View
                                 incolun
@@ -39,7 +40,8 @@ export function Home() {
                             ><Checkbox
                                     style={Styles.checkBox}
                                     value={isChecked}
-                                    onChange={setChecked}
+                                    key={index}
+                                    onValueChange={setChecked}
                                 />
                                 <Text style={Styles.commands_data}>
                                     {item.text}

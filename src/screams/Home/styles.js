@@ -38,12 +38,28 @@ export const Styles = StyleSheet.create({
         //estilo dos comandos
         color: theme.colors.heading,
         fontFamily: theme.fonts.text,
-        fontSize: 20,
+        fontSize: 17,
         margin: 5,
         marginVertical: 5
     },
     checkBox: {
         margin: 8,
-        color: '#4630EB'
-    }
+        backgroundColor: '#5A5397',
+        borderColor: '#5A5397'
+    },
+    button: {
+        color: '#7C829E',
+        backgroundColor: theme.colors.backgroundColor,
+        height: 40,
+        width: 40,
+        borderRadius: 10
+    },
+    menuBar: {
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: theme.colors.backgroundColor,
+        width: 338,
+        height: 75,
+        borderRadius: 20
+      }
 })
