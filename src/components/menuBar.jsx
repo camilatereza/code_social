@@ -1,55 +1,62 @@
-import { View, Text, TouchableOpacity } from 'react-native';
+import React from "react";
+import { Surface } from "@react-native-material/core";
+import { Styles } from '../global/styles/tabStyle';
+import { TouchableOpacity, Image, Text } from "react-native";
 
-export function MyTabBar({ state, descriptors, navigation }) {
+export function MyTabBar({ state, description, navigation }) {
   return (
-    <View style={{ flexDirection: 'row' }}>
-      {state.routes.map((route, index) => {
-        const { options } = descriptors[route.key];
-        const label =
-          options.tabBarLabel !== undefined
-            ? options.tabBarLabel
-            : options.title !== undefined
-            ? options.title
-            : route.name;
+    <Surface
+      elevation={9}
+      category='medium'
+      style={Styles.container}
+    >
+      <TouchableOpacity
+        style={Styles.button}
+        activeOpacity={0.5}
+        onPress={() => {
+          navigation.navigate('Home');
+        }}
+      >
+        <Image
+          source={require('../global/assets/navigation/Home.png')}
+          style={Styles.image}
+        />
+        <Text style={Styles.text}>
+          Início
+        </Text>
+      </TouchableOpacity>
 
-        const isFocused = state.index === index;
+      <TouchableOpacity
+        style={Styles.button}
+        activeOpacity={0.5}
+        onPress={() => {
+          navigation.navigate('Checkpoint');
+        }}
+      >
+        <Image
+          source={require('../global/assets/navigation/Check.png')}
+          style={Styles.image}
+        />
+        <Text style={Styles.text}>
+          Check
+        </Text>
+      </TouchableOpacity>
 
-        const onPress = () => {
-          const event = navigation.emit({
-            type: 'tabPress',
-            target: route.key,
-            canPreventDefault: true,
-          });
-
-          if (!isFocused && !event.defaultPrevented) {
-            // The `merge: true` option makes sure that the params inside the tab screen are preserved
-            navigation.navigate({ name: route.name, merge: true });
-          }
-        };
-
-        const onLongPress = () => {
-          navigation.emit({
-            type: 'tabLongPress',
-            target: route.key,
-          });
-        };
-
-        return (
-          <TouchableOpacity
-            accessibilityRole="button"
-            accessibilityState={isFocused ? { selected: true } : {}}
-            accessibilityLabel={options.tabBarAccessibilityLabel}
-            testID={options.tabBarTestID}
-            onPress={onPress}
-            onLongPress={onLongPress}
-            style={{ flex: 1 }}
-          >
-            <Text style={{ color: isFocused ? '#673ab7' : '#222' }}>
-              {label}
-            </Text>
-          </TouchableOpacity>
-        );
-      })}
-    </View>
+      <TouchableOpacity
+        style={Styles.button}
+        activeOpacity={0.5}
+        onPress={() => {
+          navigation.navigate('Timer');
+        }}
+      >
+        <Image
+          source={require('../global/assets/navigation/Timer.png')}
+          style={Styles.image}
+        />
+        <Text style={Styles.text}>
+          Tempo
+        </Text>
+      </TouchableOpacity>
+    </Surface>
   );
 }

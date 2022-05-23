@@ -13,9 +13,6 @@ export function Routes() {
 
       screenOptions={{
         headerShown: false,
-      //   tabBarActiveTintColor: theme.colors.button,
-      //   tabBarInactiveTintColor: theme.colors.tabInactive,
-      //   tabBarStyle: Styles.container
       }}
     >
       <tab.Screen
@@ -27,7 +24,7 @@ export function Routes() {
         component={Checkpoint}
       />
       <tab.Screen
-        name="Temporizador"
+        name="Timer"
         component={Timer}
       />
     </tab.Navigator>
