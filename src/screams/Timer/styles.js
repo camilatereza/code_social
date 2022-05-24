@@ -25,9 +25,31 @@ export const Styles = StyleSheet.create(
       alignItems: 'center',
       backgroundColor: theme.colors.panelGeneral
     },
-    clock: {
+    clockText: {
       fontSize: 40,
       color: theme.colors.backgroundColor,
+      fontFamily: theme.fonts.text,
+      justifyContent: 'center',
+      fontWeight: 'bold'
+    },
+    btnArea: {
+      flexDirection: 'row',
+      marginTop: 35,
+      height: 20,
+    },
+    button: {
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: theme.colors.panelSecun,
+      height: 70,
+      width: 70,
+      margin: 20,
+      borderRadius: 9,
+    },
+    btnTexto: {
+      fontSize: 18,
+      fontWeight: 'bold',
+      color: theme.colors.heading,
       fontFamily: theme.fonts.text
     }
   })
