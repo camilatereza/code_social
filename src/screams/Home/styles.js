@@ -5,7 +5,7 @@ export const Styles = StyleSheet.create({
     container: {
         //estilo do painel geral
         flex: 1,
-        backgroundColor: theme.colors.backgroundColor,
+        backgroundColor: '#fff',
         alignItems: 'center'
     },
     panel: {

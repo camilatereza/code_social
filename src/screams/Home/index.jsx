@@ -2,16 +2,12 @@ import { useState } from "react";
 
 import Checkbox from "expo-checkbox";
 import {
-    GestureResponderEvent,
-    Button,
     Text,
     View
 } from "react-native";
 
 import { sortCommands } from "../../utils/commands";
 import { Styles } from "./styles";
-import { useNavigation } from "@react-navigation/native";
-// import { useNavigation } from "@react-navigation/native";
 
 export function Home() {
 
@@ -25,7 +21,6 @@ export function Home() {
                     Code Social
                 </Text>
             </View>
-
             <View
                 //painel sorteador de comandos do jogo
                 style={Styles.commands}
