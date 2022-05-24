@@ -1,7 +1,12 @@
-import React, {useState} from "react";
+import React from "react";
+import { 
+  TouchableOpacity, 
+  Image, 
+  Text, 
+  View 
+} from "react-native";
 import { Surface } from "@react-native-material/core";
 import { Styles } from '../global/styles/tabStyle';
-import { TouchableOpacity, Image, Text, View } from "react-native";
 
 import { sortCommands } from "../utils/commands";
 import { sortCheck } from "../utils/dataCheck"
@@ -62,8 +67,8 @@ export function MyTabBar({ state, descriptor, navigation }) {
           <Image
             source={require('../global/assets/Play.png')}
             style={{
-              height: 30,
-              width: 30
+              height: 32,
+              width: 32
             }}
           />
         </View>
