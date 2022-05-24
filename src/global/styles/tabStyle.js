@@ -25,11 +25,19 @@ export const Styles = StyleSheet.create({
         color: theme.colors.buttons,
     },
     image: {
-        padding: 15,
-        marginHorizontal: 40,
-        // margin: 5,
-        height: 30,
-        width: 30,
+        padding: 10,
+        marginHorizontal: 18,
+        height: 28,
+        width: 28,
         resizeMode: 'stretch',
+    },
+    play: {
+        backgroundColor: theme.colors.buttonPlay,
+        marginHorizontal: 18,
+        height: 43,
+        width: 43,
+        borderRadius: 9,
+        alignItems: 'center',
+        justifyContent: 'center'
     }
 })
