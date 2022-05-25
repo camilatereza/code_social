@@ -33,9 +33,9 @@ export const Styles = StyleSheet.create({
     },
     play: {
         backgroundColor: theme.colors.buttonPlay,
-        marginHorizontal: 18,
-        height: 43,
-        width: 43,
+        marginHorizontal: 15,
+        height: 45,
+        width: 45,
         borderRadius: 9,
         alignItems: 'center',
         justifyContent: 'center'
