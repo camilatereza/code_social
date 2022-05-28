@@ -1,35 +1,17 @@
 import React from "react";
-import {
-  TouchableOpacity,
-  Image,
-  Text,
-  View
+import { 
+  TouchableOpacity, 
+  Image, 
+  Text, 
+  View 
 } from "react-native";
 import { Surface } from "@react-native-material/core";
 import { Styles } from '../global/styles/tabStyle';
 
 import { sortCommands } from "../utils/commands";
-import { sortCheck } from "../utils/dataCheck";
-
-export const listCommands = [];
+import { sortCheck } from "../utils/dataCheck"
 
 export function MyTabBar({ state, descriptor, navigation }) {
-
-  function newCommands() {
-    //deletando os dados antigos
-    if (!listCommands.length == 0) {
-      listCommands.splice(0, 8)
-    }
-
-    //sorteando novos dados
-    sortCommands().map((item) => {
-      listCommands.push(item.text);
-    })
-    return (listCommands);
-    // const play = navigation.getState() == 'Home' ? sortCommands() :
-    //   navigation.getState() == 'Checkpoint' ? sortCheck() :
-    //     navigation.getState() == 'Timer' ? run() : '';
-  }
 
   return (
     <Surface
@@ -70,12 +52,16 @@ export function MyTabBar({ state, descriptor, navigation }) {
           Check
         </Text>
       </TouchableOpacity>
-      
+
       {/* Botão de play */}
       <TouchableOpacity
         style={Styles.button}
         activeOpacity={0.5}
-        onPress={newCommands}
+        onPress={() => {
+          const play = navigation.getState() == 'Home' ? sortCommands() :
+            navigation.getState() == 'Checkpoint' ? sortCheck() :
+            navigation.getState() == 'Timer' ? run() : '';
+        }}
       >
         <View style={Styles.play}>
           <Image
