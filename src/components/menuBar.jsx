@@ -11,8 +11,8 @@ import { Styles } from '../global/styles/tabStyle';
 import { sortCommands } from "../utils/commands";
 import { sortCheck } from "../utils/dataCheck"
 
-export function MyTabBar({ state, descriptor, navigation }) {
-
+export function MyTabBar({ state, descriptor, navigation, callback }) {
+  const [instructions, setInstructions] = useState(sortCommands());
   return (
     <Surface
       elevation={9}
@@ -58,9 +58,14 @@ export function MyTabBar({ state, descriptor, navigation }) {
         style={Styles.button}
         activeOpacity={0.5}
         onPress={() => {
-          const play = navigation.getState() == 'Home' ? sortCommands() :
-            navigation.getState() == 'Checkpoint' ? sortCheck() :
-            navigation.getState() == 'Timer' ? run() : '';
+          console.log('apertou')
+          callback(sortCommands())
+          /*
+          navigation.getState() === 'Home' ? callback(sortCommands()) :
+            navigation.getState() === 'Checkpoint' ? sortCheck() :
+            navigation.getState() === 'Timer' ? run() : '';
+
+           */
         }}
       >
         <View style={Styles.play}>
