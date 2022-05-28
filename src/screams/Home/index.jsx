@@ -8,6 +8,7 @@ import {
 
 import { sortCommands } from "../../utils/commands";
 import { Styles } from "./styles";
+import { listCommands } from "../../components/menuBar";
 
 export function Home() {
 
@@ -25,7 +26,7 @@ export function Home() {
                 //painel sorteador de comandos do jogo
                 style={Styles.commands}
             >{
-                    sortCommands().map((item, index) => {
+                    listCommands.map((item, index, listCommands) => {
                         const [isChecked, setChecked] = useState(false);
                         return (
                             <View
