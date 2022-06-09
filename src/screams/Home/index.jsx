@@ -11,11 +11,11 @@ import { Styles } from "./styles";
 
 export function Home({inst}) {
     function render() {
-        console.log(inst)
         if(inst === undefined){
             return sortCommands();
         }
         return inst
+
     }
     return (
         <View style={Styles.container}>
@@ -34,6 +34,7 @@ export function Home({inst}) {
 
                 render().map((item, index) => {
                         const [isChecked, setChecked] = useState(false);
+                        setChecked(false);
                         return (
                             <View
                                 incolun
