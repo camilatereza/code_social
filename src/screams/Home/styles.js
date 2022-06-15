@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { normalize } from "../../components/dimensoes";
 import { theme } from "../../global/styles/theme";
 
 export const Styles = StyleSheet.create({
@@ -11,8 +12,8 @@ export const Styles = StyleSheet.create({
     panel: {
         //estilo do painel inicial
         backgroundColor: '#817CCC',
-        width: '100%',
-        height: '28%',
+        width: normalize(325),
+        height: normalize(160),
         borderBottomLeftRadius: 50,
         borderBottomRightRadius: 50,
     },
@@ -22,14 +23,14 @@ export const Styles = StyleSheet.create({
         fontFamily: theme.fonts.title,
         textAlign: 'center',
         fontSize: 40,
-        marginBottom: 32,
-        marginTop: 107
+        marginBottom: 25,
+        marginTop: 100
     },
     commands: {
         //estilo do painel de comandos
         backgroundColor: '#AE91E1',
-        width: '75%',
-        height: '50%',
+        width: normalize(270),
+        height: normalize(320),
         margin: 85,
         borderRadius: 20,
         justifyContent: 'center',
@@ -38,28 +39,28 @@ export const Styles = StyleSheet.create({
         //estilo dos comandos
         color: theme.colors.heading,
         fontFamily: theme.fonts.text,
-        fontSize: 17,
-        margin: 5,
-        marginVertical: 5
+        fontSize: 19,
+        margin: 10,
+        marginVertical: 8
     },
     checkBox: {
-        margin: 8,
+        margin: 12,
         backgroundColor: '#5A5397',
         borderColor: '#5A5397'
     },
     button: {
         color: '#7C829E',
         backgroundColor: theme.colors.backgroundColor,
-        height: 40,
-        width: 40,
+        height: normalize(40),
+        width: normalize(40),
         borderRadius: 10
     },
     menuBar: {
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: theme.colors.backgroundColor,
-        width: 338,
-        height: 75,
+        width: normalize(338),
+        height: normalize(75),
         borderRadius: 20
       }
 })
