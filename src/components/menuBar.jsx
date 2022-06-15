@@ -1,15 +1,13 @@
-import React from "react";
-import { 
-  TouchableOpacity, 
-  Image, 
-  Text, 
-  View 
-} from "react-native";
+import React, { useState } from "react";
 import { Surface } from "@react-native-material/core";
+import {
+  Image,
+  Text, TouchableOpacity, View
+} from "react-native";
+
 import { Styles } from '../global/styles/tabStyle';
 
 import { sortCommands } from "../utils/commands";
-import { sortCheck } from "../utils/dataCheck"
 
 export function MyTabBar({ state, descriptor, navigation, callback }) {
   const [instructions, setInstructions] = useState(sortCommands());
@@ -58,14 +56,7 @@ export function MyTabBar({ state, descriptor, navigation, callback }) {
         style={Styles.button}
         activeOpacity={0.5}
         onPress={() => {
-          console.log('apertou')
           callback(sortCommands())
-          /*
-          navigation.getState() === 'Home' ? callback(sortCommands()) :
-            navigation.getState() === 'Checkpoint' ? sortCheck() :
-            navigation.getState() === 'Timer' ? run() : '';
-
-           */
         }}
       >
         <View style={Styles.play}>
