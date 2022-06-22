@@ -1,38 +1,53 @@
-import React from "react";
-import { View, Text } from "react-native";
+import React, { useState } from "react";
+import { View, Text, TouchableOpacity } from "react-native";
+import { connection } from "../../database/database_service";
 import { styles } from "./styles";
 
+const db = connection.getConnection()
+
 export function Checkpoint() {
+  const [checkData, setCheckData] = useState({})
+
+  let searchCheck = () => {
+    console.log(checkData)
+    setCheckData({}); //será uma lista vazia
+
+    db.transaction((tx) => {
+      tx.executeSql(
+        'SELECT * FROM checkpoint WHERE id_check = ?', [3],
+        (results) => {
+          var len = results.rows.length;
+          if (len > 0) {
+            setCheckData(results.rows.item(0))
+          } else {
+            alert('Nenhum dado encontrado')
+          }
+        }
+      )
+    })
+    console.log(checkData)
+  }
 
   return (
 
     <View style={styles.container}>
       <View style={styles.panel}>
-        <Text style={styles.text}>
-          Racismo {'\n'}
-          {'\n'}
-          Uma das maiores pressões estéticas da sociedade, em mulheres,
-          tem relação com o cabelo liso e cacheado. Desde muito cedo as crianças
-          escutam críticas e piadas sobre seus cabelos e no mais tardar, durante a adolescência,
-          é comum que utilizem de químicas para o alisar.{'\n'}
-          {'\n'}
-          Muitos são os comentários feitos sobre pessoas de pele preta nas redes sociais,
-          mas um dos movimentos que vem ganhando um maior destaque é a aceitação capilar,
-          além de penteados com trança afro e transição o que auxilia. A divulgação destes
-          movimentos cria não só um sentimento de apoio como traz também um conforto para as
-          mulheres o que aumenta sua autoestima e aceitação, sendo assim: {'\n'}
-          {'\n'}
-          Se você adivinhar o filme “💛😄💚🤢💙😭💜😱💔😡” então: {'\n'}
-          Você ganhará um laço de repetição {'\n'}
-          Senão: {'\n'}
-          Ganhará uma Lista com 4 comandos, sendo eles: {'\n'}
-          Girar para à direita {'\n'}
-          Descer {'\n'}
+        <Text style={styles.text} >
+          {checkData.titulo}
+        </Text>
+        <Text style={styles.text} >
+          {checkData.descricao}
         </Text>
       </View>
-
-      
+      <TouchableOpacity style={styles.button} onPress={searchCheck}>
+          <Text style={styles.btnTexto}>Novo dado</Text>
+        </TouchableOpacity>
     </View>
-
   );
+}
+
+function random() {
+  return (
+    Math.floor(Math.random() * 13 + 1)
+  )
 }
