@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { connection } from "../database/database_service";
+import { random } from "./commands";
 
 const db = connection.getConnection();
 
-export const newData = () => {
+export function newData() {
   var len = 0;
   let [checkData, setCheckData] = useState([]);
 
@@ -17,19 +18,20 @@ export const newData = () => {
         for (let i = 0; i < len; ++i) {
           temp.push(results.rows.item(i));
         }
+        setCheckData([])
         setCheckData(temp);
       }
     );
   });
-
-  //sortear apenas um dado
   const data = [];
-  data.push(checkData[random(0, len)]);
-  return (data)
-}
+  var position = random(0, len);
 
-function random(min, max) {
-  return (
-    Math.floor(Math.random() * (max - min + 1) + min)
-  );
+  checkData.map((item, index) => {
+    if (index == position) {
+      data.push(item)
+    } else {
+      data.push("Nenhum dado encontrado")
+    }
+  })
+  return (data)
 }

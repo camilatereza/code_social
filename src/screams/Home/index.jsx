@@ -3,19 +3,23 @@ import { useState } from "react";
 import Checkbox from "expo-checkbox";
 import {
     Text,
-    View
+    View,
+    TouchableOpacity,
+    Image
 } from "react-native";
 
 import { sortCommands } from "../../utils/commands";
 import { Styles } from "./styles";
+import { normalize } from "../../components/dimensoes";
 
-export function Home({inst}) {
+export function Home() {
+    const [instructions, setInstruction] = useState()
+
     function render() {
-        console.log(inst)
-        if(inst === undefined){
+        if (instructions === undefined) {
             return sortCommands();
         }
-        return inst
+        return instructions
     }
     return (
         <View style={Styles.container}>
@@ -32,7 +36,7 @@ export function Home({inst}) {
                 style={Styles.commands}
             >{
 
-                render().map((item, index) => {
+                    render().map((item, index) => {
                         const [isChecked, setChecked] = useState(false);
                         return (
                             <View
@@ -53,6 +57,18 @@ export function Home({inst}) {
                     })
                 }
             </View>
+
+            {/* Botão de play */}
+            <TouchableOpacity
+                style={Styles.button}
+                activeOpacity={0.5}
+                onPress={() => {
+                    setInstruction({});
+                    setInstruction(sortCommands());
+                }}
+            >
+                <Text style={Styles.btnTexto}>Novos</Text>
+            </TouchableOpacity>
         </View>
     )
 }
