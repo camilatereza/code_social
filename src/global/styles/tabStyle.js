@@ -1,16 +1,17 @@
 import { StyleSheet } from "react-native";
+import { normalize } from "../../components/dimensoes";
 import { theme } from "./theme";
 
 export const Styles = StyleSheet.create({
     container: {
         justifyContent: 'center',
         flexDirection: 'row',
-        width: '90%',
-        height: '10%',
+        width: normalize(290),
+        height: normalize(65),
         backgroundColor: '#EBEBEB',
         alignItems: 'center',
-        marginHorizontal: 20,
-        marginVertical: 15
+        marginHorizontal: normalize(15),
+        marginVertical: normalize(15)
     },
     button: {
         backgroundColor: 'transparent',
@@ -21,22 +22,22 @@ export const Styles = StyleSheet.create({
     text: {
         textAlign: 'auto',
         fontFamily: theme.fonts.text,
-        fontSize: 13,
+        fontSize: normalize(12),
         color: theme.colors.buttons,
     },
     image: {
-        padding: 10,
-        marginHorizontal: 18,
-        height: 28,
-        width: 28,
+        padding: normalize(12),
+        marginHorizontal: normalize(16),
+        height: normalize(15),
+        width: normalize(15),
         resizeMode: 'stretch',
     },
-    play: {
-        backgroundColor: theme.colors.buttonPlay,
-        marginHorizontal: 15,
-        height: 45,
-        width: 45,
-        borderRadius: 9,
+    dado: {
+        backgroundColor: theme.colors.buttonCenter,
+        marginHorizontal: normalize(15),
+        height: normalize(38),
+        width: normalize(38),
+        borderRadius: normalize(9),
         alignItems: 'center',
         justifyContent: 'center'
     }
