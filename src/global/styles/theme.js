@@ -3,7 +3,7 @@ export const theme = {
         backgroundColor: '#EBEBEB',
         heading: '#EBEBEB',
         buttons: '#626A8D',
-        buttonPlay: '#3A32B7',
+        buttonCenter: '#3A32B7',
         panelGeneral: '#817CCC',
         panelSecun: '#AE91E1',
         selectItem: '#5A5397'

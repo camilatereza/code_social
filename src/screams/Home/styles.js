@@ -13,54 +13,56 @@ export const Styles = StyleSheet.create({
         //estilo do painel inicial
         backgroundColor: '#817CCC',
         width: normalize(325),
-        height: normalize(160),
-        borderBottomLeftRadius: 50,
-        borderBottomRightRadius: 50,
+        height: normalize(155),
+        borderBottomLeftRadius: normalize(50),
+        borderBottomRightRadius: normalize(50),
     },
     title: {
         //estilo do titulo
         color: theme.colors.heading,
         fontFamily: theme.fonts.title,
         textAlign: 'center',
-        fontSize: 40,
-        marginBottom: 25,
-        marginTop: 100
+        fontSize: normalize(35),
+        marginBottom: normalize(25),
+        marginTop: normalize(70)
     },
     commands: {
         //estilo do painel de comandos
         backgroundColor: '#AE91E1',
         width: normalize(270),
-        height: normalize(320),
-        margin: 85,
-        borderRadius: 20,
+        height: normalize(350),
+        marginTop: normalize(45),
+        marginVertical: normalize(25),
+        borderRadius: normalize(20),
         justifyContent: 'center',
     },
     commands_data: {
         //estilo dos comandos
         color: theme.colors.heading,
         fontFamily: theme.fonts.text,
-        fontSize: 19,
-        margin: 10,
-        marginVertical: 8
+        fontSize: normalize(18),
+        margin: normalize(6),
+        marginVertical: normalize(10)
     },
     checkBox: {
-        margin: 12,
+        // margin: normalize(15),
+        marginHorizontal: normalize(15),
+        marginVertical: normalize(10),
         backgroundColor: '#5A5397',
         borderColor: '#5A5397'
     },
     button: {
-        color: '#7C829E',
-        backgroundColor: theme.colors.backgroundColor,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: theme.colors.panelGeneral,
         height: normalize(40),
-        width: normalize(40),
-        borderRadius: 10
+        width: normalize(70),
+        borderRadius: normalize(9),
     },
-    menuBar: {
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: theme.colors.backgroundColor,
-        width: normalize(338),
-        height: normalize(75),
-        borderRadius: 20
-      }
+    btnTexto: {
+        fontSize: normalize(16),
+        fontWeight: 'bold',
+        color: theme.colors.heading,
+        fontFamily: theme.fonts.text
+    }
 })
