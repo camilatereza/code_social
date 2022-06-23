@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'center'
     },
-    panel:{
+    panel: {
         //estilo do painel de checkpoint
         backgroundColor: '#AE91E1',
         width: '80%',
@@ -21,8 +21,23 @@ export const styles = StyleSheet.create({
         //estilo dos comandos
         color: theme.colors.heading,
         fontFamily: theme.fonts.text,
-        fontSize: 12.5,
+        fontSize: 11,
         textAlign: 'justify',
         margin: 30
+    },
+    button: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: theme.colors.panelSecun,
+        height: 70,
+        width: 70,
+        margin: 20,
+        borderRadius: 9,
+    },
+    btnTexto: {
+        fontSize: 18,
+        fontWeight: 'bold',
+        color: theme.colors.heading,
+        fontFamily: theme.fonts.text
     }
 })
