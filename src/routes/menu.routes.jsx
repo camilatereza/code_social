@@ -4,15 +4,12 @@ import { Checkpoint } from "../screams/Check";
 import { Home } from "../screams/Home";
 import { Timer } from "../screams/Timer";
 import { MyTabBar } from "../components/menuBar";
-import {useState} from "react";
-import {sortCommands} from "../utils/commands";
 
 const tab = createBottomTabNavigator();
 
 export function Routes() {
-  const [instructions, setInstructions] = useState(sortCommands());
   return (
-    <tab.Navigator tabBar={props => <MyTabBar callback={setInstructions} {...props} />}
+    <tab.Navigator tabBar={props => <MyTabBar {...props} />}
 
       screenOptions={{
         headerShown: false,
@@ -20,7 +17,7 @@ export function Routes() {
     >
       <tab.Screen
         name='Home'
-        children={ () => <Home inst={instructions}></Home>}
+        component={Home}
       />
       <tab.Screen
         name='Checkpoint'

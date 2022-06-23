@@ -1,16 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import { Surface } from "@react-native-material/core";
 import {
   Image,
-  Text, TouchableOpacity, View
+  Text, 
+  TouchableOpacity, 
+  View,
+  Alert
 } from "react-native";
 
 import { Styles } from '../global/styles/tabStyle';
+import { random } from "../utils/commands";
+import { normalize } from "./dimensoes";
 
-import { sortCommands } from "../utils/commands";
+export function MyTabBar({navigation, callback }) {
 
-export function MyTabBar({ state, descriptor, navigation, callback }) {
-  const [instructions, setInstructions] = useState(sortCommands());
   return (
     <Surface
       elevation={9}
@@ -51,20 +54,29 @@ export function MyTabBar({ state, descriptor, navigation, callback }) {
         </Text>
       </TouchableOpacity>
 
-      {/* Botão de play */}
+      {/* Botão do dado */}
       <TouchableOpacity
         style={Styles.button}
         activeOpacity={0.5}
-        onPress={() => {
-          callback(sortCommands())
+        onPress={
+          ()=> {
+          const value = '' + [random(1,6)];
+          Alert.alert('Dado', value, [
+            {
+              text: 'Cancel',
+              onPress: () => console.log('Cancel Pressed'),
+              style: 'cancel',
+            },
+            { text: 'OK', onPress: () => console.log('OK Pressed') },
+          ])
         }}
       >
-        <View style={Styles.play}>
+        <View style={Styles.dado}>
           <Image
-            source={require('../global/assets/Play.png')}
+            source={require('../global/assets/Dado.png')}
             style={{
-              height: 32,
-              width: 32
+              height: normalize(25),
+              width: normalize(25)
             }}
           />
         </View>
