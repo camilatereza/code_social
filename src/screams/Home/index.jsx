@@ -4,13 +4,11 @@ import Checkbox from "expo-checkbox";
 import {
     Text,
     View,
-    TouchableOpacity,
-    Image
+    TouchableOpacity
 } from "react-native";
 
 import { sortCommands } from "../../utils/commands";
 import { Styles } from "./styles";
-import { normalize } from "../../components/dimensoes";
 
 export function Home() {
     const [instructions, setInstruction] = useState()
