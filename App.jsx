@@ -6,6 +6,7 @@ import { useFonts } from 'expo-font';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { Routes } from './src/routes/menu.routes';
+import { DatabaseInit } from './src/database/databaseInit';
 
 export default function App() {
 
@@ -20,11 +21,13 @@ export default function App() {
     return <AppLoading />;
   }
 
+  DatabaseInit();
+
   return (
     <>
       <StatusBar
         //Configuração da barra de status
-        barStyle="light-content"
+        barStyle='dark-content'
         backgroundColor="transparent"
         translucent
       />
