@@ -7,7 +7,8 @@ export const Styles = StyleSheet.create({
         //estilo do painel geral
         flex: 1,
         backgroundColor: '#fff',
-        alignItems: 'center'
+        alignItems: 'center',
+        justifyContent: "center"
     },
     panel: {
         //estilo do painel inicial
@@ -30,7 +31,7 @@ export const Styles = StyleSheet.create({
         //estilo do painel de comandos
         backgroundColor: '#AE91E1',
         width: normalize(270),
-        height: normalize(350),
+        height: normalize(250),
         marginTop: normalize(45),
         marginVertical: normalize(25),
         borderRadius: normalize(20),
@@ -40,14 +41,14 @@ export const Styles = StyleSheet.create({
         //estilo dos comandos
         color: theme.colors.heading,
         fontFamily: theme.fonts.text,
-        fontSize: normalize(18),
-        margin: normalize(6),
-        marginVertical: normalize(10)
+        fontSize: normalize(15),
+        margin: normalize(3),
+        marginVertical: normalize(5)
     },
     checkBox: {
         // margin: normalize(15),
         marginHorizontal: normalize(15),
-        marginVertical: normalize(10),
+        marginVertical: normalize(5),
         backgroundColor: '#5A5397',
         borderColor: '#5A5397'
     },

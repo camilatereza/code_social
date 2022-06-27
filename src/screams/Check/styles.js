@@ -7,13 +7,14 @@ export const styles = StyleSheet.create({
         //estilo do painel geral
         flex: 1,
         backgroundColor: '#fff',
-        alignItems: 'center'
+        alignItems: 'center',
+        justifyContent: "center"
     },
     panel: {
         //estilo do painel de checkpoint
         backgroundColor: '#AE91E1',
         width: normalize(270),
-        height: normalize(470),
+        height: normalize(400),
         justifyContent: 'center',
         margin: normalize(25),
         borderRadius: normalize(40)
@@ -26,13 +27,18 @@ export const styles = StyleSheet.create({
         textAlign: 'justify',
         margin: normalize(8)
     },
+    btnArea: {
+        flexDirection: 'row',
+        // marginTop: normalize(10),
+        // height: normalize(10),
+    },
     button: {
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: theme.colors.panelGeneral,
         marginTop: normalize(65),
         height: normalize(40),
-        width: normalize(70),
+        width: normalize(90),
         borderRadius: normalize(9),
     },
     btnTexto: {

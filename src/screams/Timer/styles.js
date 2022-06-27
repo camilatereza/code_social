@@ -27,7 +27,7 @@ export const Styles = StyleSheet.create(
       backgroundColor: theme.colors.panelGeneral
     },
     clockText: {
-      fontSize: normalize(40),
+      fontSize: normalize(35),
       color: theme.colors.backgroundColor,
       fontFamily: theme.fonts.text,
       justifyContent: 'center',
@@ -43,7 +43,7 @@ export const Styles = StyleSheet.create(
       alignItems: 'center',
       backgroundColor: theme.colors.panelGeneral,
       height: normalize(60),
-      width: normalize(60),
+      width: normalize(80),
       margin: normalize(20),
       borderRadius: normalize(9),
     },
