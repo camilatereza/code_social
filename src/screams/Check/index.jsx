@@ -1,49 +1,64 @@
-import React, { useState } from "react";
-import { View, Text, TouchableOpacity, Alert } from "react-native";
-import { openConnection } from "../../database/database_service";
-import { random } from "../../utils/commands";
+import React, { useState } from 'react';
+import {
+  Text,
+  View,
+  TouchableOpacity
+} from 'react-native';
 import { styles } from "./styles";
-
-const db = openConnection()
+import { findAll, deleteById, addData } from "../../utils/checkService"
+import { random } from '../../utils/commands';
 
 export function Checkpoint() {
-  const [checkData, setCheckData] = useState([])
+  const [data, setData] = useState([])
+  const max = data.length
 
-  function search () {
-    return new Promise((resolve, reject) =>
-    db.transaction(tx => {
-      tx.executeSql('select * from checkpoint', [],
-        (_, { rows }) => {
-          setCheckData(resolve(rows))
-        }),
-        (sqlError) => {
-          console.log(sqlError);
-        }
-    }, (txError) => {
-      console.log(txError);
-    }))
+  function findAllCheck() {
+    findAll().then((response) => {
+      setData(response._array);
+    }), (error) => {
+      console.log(error);
+    }
   }
 
-  return (
+  const id = random(0, max);
+  const checkList = data.map((item, index) => {
+    if (index == id) {
+      return (
+        <>
+          <Text style={styles.title}>
+            {item.titulo}
+          </Text>
+          <Text style={styles.text}>
+            {item.descricao}
+          </Text>
+          <Text style={styles.text}>
+            {item.desafio}
+          </Text>
+          <Text style={styles.font}>
+            {item.fonte}
+          </Text>
+        </>
+      )
+    } else {
+      ''
+    }
+  });
 
+  return (
     <View style={styles.container}>
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => {
-          search()
-        }}
-      >
-        <Text style={styles.btnTexto}>Novo dado</Text>
-      </TouchableOpacity>
+
+        <TouchableOpacity
+          onPress={() => {
+            findAllCheck()
+          }}
+          style={styles.button}
+        >
+          <Text style={styles.btnTexto}>Novo dado</Text>
+        </TouchableOpacity>
 
       <View style={styles.panel}>
-
-        <Text style={styles.text} >
-          teste
-          {console.log(checkData)}
-        </Text>
-
+        {checkList}
       </View>
     </View>
   );
-}
+};
