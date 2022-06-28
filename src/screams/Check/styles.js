@@ -43,11 +43,6 @@ export const styles = StyleSheet.create({
         textAlign: "right",
         margin: normalize(10)
     },
-    btnArea: {
-        flexDirection: 'row',
-        // marginTop: normalize(10),
-        // height: normalize(10),
-    },
     button: {
         justifyContent: 'center',
         alignItems: 'center',
