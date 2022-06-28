@@ -1,28 +1,27 @@
 import React, { useState } from "react";
 import { View, Text, TouchableOpacity, Alert } from "react-native";
-import { connection } from "../../database/database_service";
+import { openConnection } from "../../database/database_service";
 import { random } from "../../utils/commands";
 import { styles } from "./styles";
 
-const db = connection.getConnection()
+const db = openConnection()
 
 export function Checkpoint() {
   const [checkData, setCheckData] = useState([])
 
-  let search = () => {
-    db.transaction((tx) => {
-      tx.executeSql(
-        'SELECT * FROM checkpoint WHERE id_check = ?', [random(0, 12)],
-        (_, results) => {
-          var len = results.rows.length;
-          if (len > 0) {
-            setCheckData(results.rows.item(0))
-          } else {
-            alert('Dado não encontrado')
-          };
+  function search () {
+    return new Promise((resolve, reject) =>
+    db.transaction(tx => {
+      tx.executeSql('select * from checkpoint', [],
+        (_, { rows }) => {
+          setCheckData(resolve(rows))
+        }),
+        (sqlError) => {
+          console.log(sqlError);
         }
-      );
-    });
+    }, (txError) => {
+      console.log(txError);
+    }))
   }
 
   return (
@@ -40,7 +39,8 @@ export function Checkpoint() {
       <View style={styles.panel}>
 
         <Text style={styles.text} >
-          {checkData.titulo}
+          teste
+          {console.log(checkData)}
         </Text>
 
       </View>
