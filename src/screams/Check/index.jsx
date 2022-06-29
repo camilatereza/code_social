@@ -5,7 +5,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 import { styles } from "./styles";
-import { findAll, deleteById, addData } from "../../utils/checkService"
+import { findAll } from "../../utils/checkService"
 import { random } from '../../utils/commands';
 
 export function Checkpoint() {

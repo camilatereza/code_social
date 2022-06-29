@@ -8,7 +8,7 @@ export const Styles = StyleSheet.create({
         flexDirection: 'row',
         width: normalize(290),
         height: normalize(65),
-        backgroundColor: '#EBEBEB',
+        backgroundColor: theme.colors.backgroundColor,
         alignItems: 'center',
         marginHorizontal: normalize(15),
         marginVertical: normalize(15)

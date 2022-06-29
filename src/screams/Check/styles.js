@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
     },
     panel: {
         //estilo do painel de checkpoint
-        backgroundColor: '#AE91E1',
+        backgroundColor: theme.colors.panelSecun,
         width: normalize(275),
         height: normalize(480),
         justifyContent: 'center',
