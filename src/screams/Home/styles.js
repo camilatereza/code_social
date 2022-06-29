@@ -8,11 +8,10 @@ export const Styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#fff',
         alignItems: 'center',
-        justifyContent: "center"
     },
     panel: {
         //estilo do painel inicial
-        backgroundColor: '#817CCC',
+        backgroundColor: theme.colors.panelGeneral,
         width: normalize(325),
         height: normalize(155),
         borderBottomLeftRadius: normalize(50),
@@ -27,33 +26,57 @@ export const Styles = StyleSheet.create({
         marginBottom: normalize(25),
         marginTop: normalize(70)
     },
+    content: {
+        //view que reune todo o conteudo de comandos
+        justifyContent: "center",
+        alignItems: "center",
+        marginTop: normalize(20),
+    },
     commands: {
         //estilo do painel de comandos
-        backgroundColor: '#AE91E1',
+        backgroundColor: theme.colors.panelSecun,
         width: normalize(270),
         height: normalize(250),
-        marginTop: normalize(45),
         marginVertical: normalize(25),
         borderRadius: normalize(20),
         justifyContent: 'center',
     },
     commands_data: {
-        //estilo dos comandos
+        //estilo do texto comandos
         color: theme.colors.heading,
         fontFamily: theme.fonts.text,
         fontSize: normalize(15),
         margin: normalize(3),
         marginVertical: normalize(5)
     },
-    checkBox: {
-        // margin: normalize(15),
+    chosen: {
+        //painel de dados escolhidos
+        fontFamily: theme.fonts.text,
+        fontSize: normalize(13),
+        color: theme.colors.selectItem,
+        height: normalize(180),
+        width: normalize(270),
+        textAlign: "center",
+    },
+    selector: {
+        //componente para selecionar os comandos
+        height: normalize(15),
+        width: normalize(15),
         marginHorizontal: normalize(15),
         marginVertical: normalize(5),
-        backgroundColor: '#5A5397',
-        borderColor: '#5A5397'
+        backgroundColor: theme.colors.selectItem,
+        borderColor: theme.colors.selectItem
+    },
+    bntArea: {
+        //botões lado a lado
+        flexDirection: 'row',
+        marginTop: normalize(10),
+        height: normalize(60),
     },
     button: {
+        //estilo dos botões
         justifyContent: 'center',
+        marginHorizontal: normalize(15),
         alignItems: 'center',
         backgroundColor: theme.colors.panelGeneral,
         height: normalize(40),
@@ -61,6 +84,7 @@ export const Styles = StyleSheet.create({
         borderRadius: normalize(9),
     },
     btnTexto: {
+        //texto de cada botão
         fontSize: normalize(16),
         fontWeight: 'bold',
         color: theme.colors.heading,

@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-import Checkbox from "expo-checkbox";
 import {
     Text,
     View,
@@ -12,13 +11,25 @@ import { Styles } from "./styles";
 
 export function Home() {
     const [instructions, setInstruction] = useState()
+    const [ordem, setOrdem] = useState([])
+    const empty = ["", "", "", "", "", "", "", "",];
 
     function render() {
         if (instructions === undefined) {
-            return sortCommands();
+            return empty;
         }
         return instructions
     }
+
+    const temp = [];
+    function chose() {
+        const choseList = []
+        for (var i = 0; i < temp.length; i++) {
+            choseList.push((i + 1) + ' - ' + temp[i] + '; ')
+        }
+        setOrdem(choseList)
+    }
+
     return (
         <View style={Styles.container}>
 
@@ -29,44 +40,66 @@ export function Home() {
                     Code Social
                 </Text>
             </View>
-            <View
-                //painel sorteador de comandos do jogo
-                style={Styles.commands}
-            >{
-
-                    render().map((item, index) => {
-                        const [isChecked, setChecked] = useState(false);
+            <View style={Styles.content}>
+                <View
+                    //painel sorteador de comandos do jogo
+                    style={Styles.commands}
+                >
+                    {render().map((item, index) => {
                         return (
                             <View
                                 incolun
                                 key={index}
                                 flexDirection={'row'}
-                            ><Checkbox
-                                    style={Styles.checkBox}
-                                    value={isChecked}
+                            >
+                                <TouchableOpacity
+                                    style={Styles.selector}
                                     key={index}
-                                    onValueChange={setChecked}
+                                    activeOpacity={0.10}
+                                    onPress={() => {
+                                        temp.push(item.text)
+                                        alert('Você selecionou: ' + item.text)
+                                    }}
                                 />
                                 <Text style={Styles.commands_data}>
                                     {item.text}
                                 </Text>
                             </View>
                         );
-                    })
-                }
-            </View>
+                    })}
 
-            {/* Botão de play */}
-            <TouchableOpacity
-                style={Styles.button}
-                activeOpacity={0.5}
-                onPress={() => {
-                    setInstruction({});
-                    setInstruction(sortCommands());
-                }}
-            >
-                <Text style={Styles.btnTexto}>Novos</Text>
-            </TouchableOpacity>
+                </View>
+
+                <View style={Styles.bntArea}>
+
+                    {/* Botão de play */}
+                    <TouchableOpacity
+                        style={Styles.button}
+                        activeOpacity={0.5}
+                        onPress={() => {
+                            setInstruction(sortCommands());
+                        }}
+                    >
+                        <Text style={Styles.btnTexto}>Novos</Text>
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                        style={Styles.button}
+                        activeOpacity={0.5}
+                        onPress={() => {
+                            chose()
+                        }}
+                    >
+                        <Text style={Styles.btnTexto}>Ordem</Text>
+                    </TouchableOpacity>
+                </View>
+
+                <Text style={Styles.chosen}>
+                    {ordem}
+                </Text>
+
+
+            </View>
         </View>
     )
 }
