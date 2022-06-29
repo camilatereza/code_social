@@ -34,8 +34,8 @@ export function Checkpoint() {
           <Text style={styles.text}>
             {item.desafio}
           </Text>
-          <Text style={styles.font}>
-            {item.fonte}
+          <Text style={styles.end}>
+            {item.resposta != null ? item.resposta : item.fonte}
           </Text>
         </>
       )
@@ -47,14 +47,14 @@ export function Checkpoint() {
   return (
     <View style={styles.container}>
 
-        <TouchableOpacity
-          onPress={() => {
-            findAllCheck()
-          }}
-          style={styles.button}
-        >
-          <Text style={styles.btnTexto}>Novo dado</Text>
-        </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
+          findAllCheck()
+        }}
+        style={styles.button}
+      >
+        <Text style={styles.btnTexto}>Novo dado</Text>
+      </TouchableOpacity>
 
       <View style={styles.panel}>
         {checkList}

@@ -22,8 +22,8 @@ export const styles = StyleSheet.create({
     title: {
         //estilo dos comandos
         color: theme.colors.heading,
-        fontFamily: theme.fonts.text,
-        fontSize: normalize(15),
+        fontFamily: theme.fonts.title,
+        fontSize: normalize(17),
         textAlign: "center",
         margin: normalize(10)
     },
@@ -33,15 +33,16 @@ export const styles = StyleSheet.create({
         fontFamily: theme.fonts.text,
         fontSize: normalize(15),
         textAlign: 'justify',
-        margin: normalize(10)
+        marginHorizontal: normalize(10),
+        marginTop: normalize(5)
     },
-    font: {
+    end: {
         //estilo dos comandos
         color: theme.colors.heading,
         fontFamily: theme.fonts.text,
         fontSize: normalize(15),
         textAlign: "right",
-        margin: normalize(10)
+        margin: normalize(20)
     },
     button: {
         justifyContent: 'center',
