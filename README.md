@@ -23,22 +23,24 @@
 ## 📝 Code_social
 O projeto pode ser baixado da play store através deste [link](http://play.google.com). <br>
 Este projeto visa ensinar de forma lúdica os estudantes a compreensão da lógica de programação onde em um tabuleiro físico e com o auxílio do aplicativo aqui presente eles irão sortear comandos e organizá-los de maneira eficiente para finalizar o jogo de forma mais rápida.
-Além de conter alguns checkpoints, também sorteados via aplicativo, que abordam temas das redes sociais ensinando e estimulando a jogabilidade. 
+Além de conter alguns checkpoints, também sorteados via aplicativo, que abordam temas das redes sociais, trazendo ensinamento e estimulando na jogabilidade. 
 
 <div id="howtogame"/>
 
 ## 🎮 Como Jogar?
 * No aplicativo serão sorteados 8 movimentos;
 * Ao rodar o dado o jogador poderá selecionar a quantidade de movimentos igual a quantidade sorteada no dado;
-* Quem chegar primeiro a casa de chegada, vence.
+* Ao longo do tabuleiro terá checkpoints que além de uma informação, também trará desafios com consequências boas ou ruins para o jogo
+* Quem chegar primeiro a casa de chegada posicionada no tabuleiro, vence.
 
 
 <div id="roles"/>
 
 ## ⚠️ Regras do jogo
-1. Cada jogador deverá escolher 3 dos movimentos sorteados;
-2. Cada cor representa um gênero musical;
-3. Cada jogador fará um movimento uma vez por rodada.
+1. Cada jogador deverá rodar o dado e o número que cair indicará a quantidade de comandos que podem ser escolhidos;
+2. No tabuleiro checkpoints com o icone 👀 serão distribuidos, e ao cair nestas casas o jogador sorteará seu checkpoint na tela indicada;
+3. Os checkpoints virão com desafio, caso solicitado a tela de Temporizador auxiliará nestes desafios;
+4. A tela de regras apresentará todas as regras de forma mais detalhada.
 
 <div id="tecnologias"/>
 
@@ -64,8 +66,8 @@ Para executar o projeto, é necessário ter as seguintes ferramentas instaladas:
 Executando o projeto na máquina:
 
 ```sh
-$ git clone https://github.com/camilatereza/redivivus.git
-$ cd redivivus/redivivus
+$ git clone https://github.com/camilatereza/code_social.git
+$ cd code_social
 $ npm install
 $ npm run start
 ```
