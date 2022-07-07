@@ -104,16 +104,16 @@ export function MyTabBar({navigation, callback }) {
         style={Styles.button}
         activeOpacity={0.5}
         onPress={() => {
-          const state = navigation.getState() == 'Home' ? navigation.stop() : navigation.goBack();
+          navigation.navigate('Rules');
         }}
       >
         <Image
-          source={require('../global/assets/Logout.png')}
+          source={require('../global/assets/Rules.png')}
           style={Styles.image}
         />
         <View style={Styles.button}>
           <Text style={Styles.text}>
-            Voltar
+            Regras
           </Text>
         </View>
       </TouchableOpacity>
