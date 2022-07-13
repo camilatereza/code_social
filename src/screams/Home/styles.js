@@ -1,6 +1,9 @@
-import { StyleSheet } from "react-native";
+import { Dimensions, StyleSheet } from "react-native";
 import { normalize } from "../../components/dimensoes";
 import { theme } from "../../global/styles/theme";
+
+const widthD = Dimensions.get("screen").width;
+const heightD = Dimensions.get("screen").height;
 
 export const Styles = StyleSheet.create({
     container: {
@@ -22,7 +25,7 @@ export const Styles = StyleSheet.create({
         color: theme.colors.heading,
         fontFamily: theme.fonts.title,
         textAlign: 'center',
-        fontSize: normalize(35),
+        fontSize: 45,
         marginBottom: normalize(25),
         marginTop: normalize(70)
     },
@@ -35,8 +38,8 @@ export const Styles = StyleSheet.create({
     commands: {
         //estilo do painel de comandos
         backgroundColor: theme.colors.panelSecun,
-        width: normalize(270),
-        height: normalize(250),
+        width: widthD/1.3,
+        height: heightD/2.3,
         marginVertical: normalize(25),
         borderRadius: normalize(20),
         justifyContent: 'center',
@@ -45,14 +48,14 @@ export const Styles = StyleSheet.create({
         //estilo do texto comandos
         color: theme.colors.heading,
         fontFamily: theme.fonts.text,
-        fontSize: normalize(15),
+        fontSize: 18,
         margin: normalize(3),
         marginVertical: normalize(5)
     },
     chosen: {
         //painel de dados escolhidos
         fontFamily: theme.fonts.text,
-        fontSize: normalize(13),
+        fontSize: 13,
         color: theme.colors.selectItem,
         height: normalize(180),
         width: normalize(270),
@@ -85,7 +88,7 @@ export const Styles = StyleSheet.create({
     },
     btnTexto: {
         //texto de cada botão
-        fontSize: normalize(16),
+        fontSize: 20,
         fontWeight: 'bold',
         color: theme.colors.heading,
         fontFamily: theme.fonts.text

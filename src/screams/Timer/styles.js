@@ -27,7 +27,7 @@ export const Styles = StyleSheet.create(
       backgroundColor: theme.colors.panelGeneral
     },
     clockText: {
-      fontSize: normalize(35),
+      fontSize: 45,
       color: theme.colors.backgroundColor,
       fontFamily: theme.fonts.text,
       justifyContent: 'center',
@@ -48,7 +48,7 @@ export const Styles = StyleSheet.create(
       borderRadius: normalize(9),
     },
     btnTexto: {
-      fontSize: normalize(18),
+      fontSize: 25,
       fontWeight: 'bold',
       color: theme.colors.heading,
       fontFamily: theme.fonts.text

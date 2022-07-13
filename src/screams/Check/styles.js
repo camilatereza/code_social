@@ -1,6 +1,9 @@
-import { StyleSheet } from "react-native";
+import { Dimensions, StyleSheet } from "react-native";
 import { normalize } from "../../components/dimensoes";
 import { theme } from "../../global/styles/theme";
+
+const widthD = Dimensions.get("screen").width;
+const heightD = Dimensions.get("screen").height;
 
 export const styles = StyleSheet.create({
     container: {
@@ -13,8 +16,8 @@ export const styles = StyleSheet.create({
     panel: {
         //estilo do painel de checkpoint
         backgroundColor: theme.colors.panelSecun,
-        width: normalize(275),
-        height: normalize(480),
+        width: widthD/1.15,
+        height: heightD/1.5,
         justifyContent: 'center',
         margin: normalize(25),
         borderRadius: normalize(40)
@@ -23,7 +26,7 @@ export const styles = StyleSheet.create({
         //estilo dos comandos
         color: theme.colors.heading,
         fontFamily: theme.fonts.title,
-        fontSize: normalize(17),
+        fontSize: 18,
         textAlign: "center",
         margin: normalize(10)
     },
@@ -31,7 +34,7 @@ export const styles = StyleSheet.create({
         //estilo dos comandos
         color: theme.colors.heading,
         fontFamily: theme.fonts.text,
-        fontSize: normalize(15),
+        fontSize: 15,
         textAlign: 'justify',
         marginHorizontal: normalize(10),
         marginTop: normalize(5)
@@ -40,7 +43,7 @@ export const styles = StyleSheet.create({
         //estilo dos comandos
         color: theme.colors.heading,
         fontFamily: theme.fonts.text,
-        fontSize: normalize(15),
+        fontSize: 16,
         textAlign: "right",
         margin: normalize(20)
     },
@@ -55,7 +58,7 @@ export const styles = StyleSheet.create({
         borderRadius: normalize(9),
     },
     btnTexto: {
-        fontSize: normalize(15),
+        fontSize: 20,
         fontWeight: 'bold',
         color: theme.colors.heading,
         fontFamily: theme.fonts.text
