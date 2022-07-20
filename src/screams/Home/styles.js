@@ -39,7 +39,7 @@ export const Styles = StyleSheet.create({
         //estilo do painel de comandos
         backgroundColor: theme.colors.panelSecun,
         width: widthD/1.3,
-        height: heightD/2.3,
+        height: heightD/2.5,
         marginVertical: normalize(25),
         borderRadius: normalize(20),
         justifyContent: 'center',
