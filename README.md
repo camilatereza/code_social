@@ -31,9 +31,9 @@ O jogo divide-se em dois recursos. O virtual, aqui presente em forma de aplicati
 * No aplicativo serão sorteados 8 movimentos;
 * Ao rodar o dado o jogador poderá selecionar a quantidade de movimentos igual a quantidade sorteada no dado;
 * Ao longo do tabuleiro terá checkpoints que irão abordar temas sociais e exemplifica-los no ambiente das redes sociais. 
-      * Este checkpoint ofertará um desafio com premiação, caso a atitude exemplificada seja boa.
-      * Ou uma consequência ruim, caso a atitude exemplificada seja desrespeitosa.
-      ** (Este checkpoint com estes dados serão sorteados via aplicativo) **
+	* Este checkpoint ofertará um desafio com premiação, caso a atitude exemplificada seja boa.
+	* Ou uma consequência ruim, caso a atitude exemplificada seja desrespeitosa.
+	* *(Este checkpoint serão sorteados via aplicativo)*
 * Quem chegar primeiro a casa de chegada posicionada no tabuleiro, vence.
 
 
