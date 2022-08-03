@@ -22,23 +22,26 @@
 
 ## 📝 Code_social
 O projeto pode ser baixado da play store através deste [link](http://play.google.com). <br>
-Este projeto visa ensinar de forma lúdica os estudantes a compreensão da lógica de programação onde em um tabuleiro físico e com o auxílio do aplicativo aqui presente eles irão sortear comandos e organizá-los de maneira eficiente para finalizar o jogo de forma mais rápida.
-Além de conter alguns checkpoints, também sorteados via aplicativo, que abordam temas das redes sociais, trazendo ensinamento e estimulando na jogabilidade. 
+Este projeto visa praticar de forma lúdica conceitos do pensamento computacional e abordar atitudes e temas presentes nas redes sociais, afim de conscientizar e informar os estudantes.
+O jogo divide-se em dois recursos. O virtual, aqui presente em forma de aplicativo e o físico representado por um tabuleiro. O aplicativo sorteará comandos e desafios que resultarão em um conjunto de passos para locomoção no tabuleiro, afim de trabalhar a resolução de conflitos e foco. Para exercitar tais habilidades o tabuleiro contará com elementos que precisarão ser contornados e uma cada de chegada, ganhando quem alcança-la primeiro. 
 
 <div id="howtogame"/>
 
 ## 🎮 Como Jogar?
 * No aplicativo serão sorteados 8 movimentos;
 * Ao rodar o dado o jogador poderá selecionar a quantidade de movimentos igual a quantidade sorteada no dado;
-* Ao longo do tabuleiro terá checkpoints que além de uma informação, também trará desafios com consequências boas ou ruins para o jogo
+* Ao longo do tabuleiro terá checkpoints que irão abordar temas sociais e exemplifica-los no ambiente das redes sociais. 
+	* Este checkpoint ofertará um desafio com premiação, caso a atitude exemplificada seja boa.
+	* Ou uma consequência ruim, caso a atitude exemplificada seja desrespeitosa.
+	* *(Este checkpoint serão sorteados via aplicativo)*
 * Quem chegar primeiro a casa de chegada posicionada no tabuleiro, vence.
 
 
 <div id="roles"/>
 
 ## ⚠️ Regras do jogo
-1. Cada jogador deverá rodar o dado e o número que cair indicará a quantidade de comandos que podem ser escolhidos;
-2. No tabuleiro checkpoints com o icone 👀 serão distribuidos, e ao cair nestas casas o jogador sorteará seu checkpoint na tela indicada;
+1. Cada jogador deverá rodar o dado e o número que cair indicará a quantidade de comandos que podem ser escolhidos na tela inicial;
+2. No tabuleiro checkpoints com o icone 👀 serão distribuidos, e ao cair nestas casas o jogador sorteará seu checkpoint na tela indicada no aplicativo;
 3. Os checkpoints virão com desafio, caso solicitado a tela de Temporizador auxiliará nestes desafios;
 4. A tela de regras apresentará todas as regras de forma mais detalhada.
 
