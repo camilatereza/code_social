@@ -13,6 +13,10 @@ export function sortCommands(){
   for (let i = 0; i < 8; i++) {
     command.push(commands[random(0, 4)]);
   }
+  if (!command.includes(commands[0])) {
+    command.pop();
+    command.push(commands[0])
+  }
   
   return command;
 }
