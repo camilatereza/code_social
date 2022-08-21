@@ -1,9 +1,9 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-import { Checkpoint } from "../screams/Check";
-import { Home } from "../screams/Home";
-import { Timer } from "../screams/Timer";
-import { Rules } from "../screams/Rules";
+import { Checkpoint } from "../screens/Check";
+import { Home } from "../screens/Home";
+import { Timer } from "../screens/Timer";
+import { Rules } from "../screens/Rules";
 import { MyTabBar } from "../components/menuBar";
 
 const tab = createBottomTabNavigator();

@@ -17,7 +17,7 @@ function InitDb() {
   db.transaction(
     tx => {
       for (var i = 0; i < sql.length; i++) {
-        console.log("execute sql : " + sql[i]);
+        // console.log("execute sql : " + sql[i]);
         tx.executeSql(sql[i]);
       }
     }, (error) => {
