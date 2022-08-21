@@ -34,7 +34,7 @@ Vale ressaltar que este ambiente precisa ser coordenado pelos pais, para que sig
   * Você ganhará um laço de repetição
 Senão:
   Você ganhará uma lista com os comandos abaixo:
-    * Ir para a frente
+    * Vá para a frente
     * Pular', 'Fonte Internet matters', NULL);`,
 
 `INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
@@ -46,8 +46,8 @@ Quando criança, a percepção humana é mais aguçada, além de absorver quase 
 	* Você ganhará um laço de repetição
 Senão:
 	Você ganhará uma lista com os comandos abaixo:
-		* Ir para a frente
-		* Ir para a frente
+		* Vá para a frente
+		* Vá para a frente
 		* Descer
 		* Pular', 'Fonte Internet matters', NULL);`,
 
@@ -68,8 +68,8 @@ Quando alguém fala ou faz algo de errado, mas vem a público assumir seu erro e
 	* Você ganhará um laço de repetição
 Senão:
 	Você ganhará uma lista com os comandos abaixo:
-		* Ir para a frente
-		* Ir para a frente
+		* Vá para a frente
+		* Vá para a frente
 		* Descer', 'Fonte Canaltech', NULL);`,
 
 `INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
@@ -82,10 +82,11 @@ Debates se tornam guerras virtuais se as reflexões forem divergentes e tudo é 
 
 `INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
 VALUES('Haters - Conteúdos sem interesse',
-'Conceito
+'A frequência de mensagens de ódio está cada vez mais presente nas redes sociais, pelo fato da internet ter mais liberdade de se expressar. Muitas das vezes esses haters acabam fazendo até ameaças de mortes e difamações.
 
-Contexto',
-'Desafio', 'fonte', 'Resposta');`,
+A exemplo disso, temos os ataques frequentes as subcelebridades ou celebridades, que sofrem haters banais como críticas aos seus conteúdos postados nas redes sociais, sendo assim:',
+'Na próxima rodada você:
+	* Perderá 3 comandos da quantidade que retirar', 'Fonte G1', NULL);`,
 
 `INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
 VALUES('Fanatismo em reality shows',
@@ -137,11 +138,17 @@ Ao compartilhar uma notícia sem verificar as fontes, os usuários acabam gerand
 	* Perderá 4 comandos da quantidade que retira', 'Fonte Brasil Escola', NULL);`,
 
 `INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
-VALUES('Protestos indigenas',
-'Conceito
+VALUES('Política - Protestos indigenas',
+'A política tem impacto direto em diversos aspectos do cotidiano e suas medidas atingem toda a população direta ou indiretamente. Tudo isto não é novidade, mas o cuidado com o meio ambiente e com os povos indígenas sempre foram assuntos colocados em segundo plano. Atualmente estes assuntos vinham a pauta, mas de forma ruim e prejudicial de diversas formas.
 
-Contexto',
-'Desafio', 'fonte', 'Resposta');`,
+Quando projetos de lei vão a votação é dever do cidadão entendê-los e buscar recorrer ou não. Recentemente projetos que buscam tirar dos indígenas a posse de terras onde habitam foram a plenário e muitos protestos ocorreram, nestes momentos a atividade nas redes sociais foi fundamental para auxiliá-los nesta luta, sendo assim:',
+'Se você estiver de tênis, então:
+	* Você ganhará um laço de repetição
+Senão:
+	Você ganhará uma lista com os comandos abaixo:
+		* Girar para a esquerda
+		* Descer
+		* Vá para a frente', 'Fonte Estado de Minas', NULL);`,
 
 `INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
 VALUES('Política - Omissão de opiniões',
@@ -152,7 +159,7 @@ Quando cantores e influenciadores usaram suas redes para incentivar o movimento 
 	* Você ganhará um laço de repetição
 Senão:
 	Você ganhará uma lista com os comandos abaixo:
-		* Ir para a frente
+		* Vá para a frente
 		* Girar para a direita', 'Fonte JusBrasil', NULL);`,
 
 `INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
@@ -172,8 +179,8 @@ Com o avanço das redes sociais muitos casos de relacionamentos abusivos e agres
 	* Você ganhará um laço de repetição
 Senão:
 	Você ganhará uma lista com os comandos abaixo:
-		* Ir para a frente
-		* Ir para a frente
+		* Vá para a frente
+		* Vá para a frente
 		* Descer', 'Fonte Glamour Globo', 'Resposta');`,
 
 `INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
@@ -188,25 +195,32 @@ Obs: Como prevenção tire prints e guarde estes dados e os do agressor como pro
 'Fonte Unimar', NULL);`,
 
 `INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
-VALUES('Relacionamentos (Proximo passo)',
-'Conceito
+VALUES('Relacionamentos - Pessão',
+'Ter um relacionamento é algo comum dentro da sociedade, no entanto, junto a ele vem o julgamento e pressão sobre o casal, um bom exemplo é quando o relacionamento é longo e algumas pessoas perguntam quando será o casamento.
 
-Contexto',
-'Desafio', 'fonte', 'Resposta');`,
+Quando as pessoas interagem pelas redes sociais precisam ter consciência que todos os seus atos interferem no outro, mesmo que não estejam se vendo pessoalmente. Ao comentar em fotos de casal perguntando quando irão se casar ou quando já estão casados e perguntam quando virá filhos depois se este filho terá um irmão e assim por diante, os usuários causam pressão e desconforto na vida de quem recebe tais comentários. Podendo ocasionar discussões e complicações na relação a dois,sendo assim:',
+'Na próxima rodada você:
+	*Perderá 2 comandos da quantidade que retirar', 'Fonte Delas', NULL);`,
 
 `INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
-VALUES('Relacionamentos (Criação de filhos e palpites)',
-'Conceito
+VALUES('Relacionamentos - Palpites',
+'Quem gosta de palpites de pessoas que você não pediu a opinião? Ninguém, não é mesmo? E porque uma mãe gostaria de dar palpites na criação do próprio filho? Neste caso é importante salientar que entende-se que estes palpites são muitas vezes ofertados com boa intenção e com o intuito de ajudar, no entanto os pais recebem este tipo de dicas a todos os momentos desde o anúncio da gravidez e muitas mães no puerpério passam por problemas onde este tipo de assunto piora sua situação emocional e confiança em cuidar do próprio filho.
 
-Contexto',
-'Desafio', 'fonte', 'Resposta');`,
+Os hormônios durante e após a gravidez mexe não apenas com o corpo, mas também com o psicológico das mulheres e quando são feitos comentários enaltecendo, elogiando ela ou o seu filho ou apenas puxando um assunto aleatório, os usuários conseguem auxiliar no descanso mental e distração trocando os palpites, baixa estima, e falta de confiança, por animo e renovação das energias, sendo assim:',
+'Se você encontrar um frasco azul em 1 min, então:
+	* Você ganhará um laço de repetição
+Senão:
+	Você ganhará uma lista com os comandos abaixo:
+		* Vá para a frente
+		* Girar para a direita', 'Fonte Objetivo Sorocaba', NULL);`,
 
 `INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
 VALUES('Relacionamentos (Novos modelos de relacionamento)',
-'Conceito
+'Relacionar-se faz parte da essência humana, seja por meio de amizades ou relacionamentos amorosos, sempre buscamos a socialização. Ultimamente devido a liberdade de expressão nas redes sociais, coisas que já existiam começaram a ganhar destaque e serem discutidas, uma delas são as formas de relacionamento fora a monogamia tradicional.
 
-Contexto',
-'Desafio', 'fonte', 'Resposta');`,
+Varios casais passaram a compartilhar suas rotinas e seu modelo de relação sendo ele aberto, poligamia, entre o mesmo sexo, dentre outros. Infelizmente muitas pessoas consomem estes conteúdos com curiosidade e buscam criticar, ofender e até ameaçar tais casais, sendo assim:',
+'Na próxima rodada você:
+	* Perderá 2 comandos da quantidade que retirar', 'Fonte UNIFOR', NULL);`,
 
 `INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
 VALUES('Intolerância Religiosa',
@@ -215,13 +229,6 @@ VALUES('Intolerância Religiosa',
 Casos de ataques a centros religiosos tem sido cada vez mais comum e têm pouca repercussão nas redes sociais, no entanto, se algum influenciador sofre esse tipo de preconceito rapidamente o caso tem notoriedade, sendo assim:',
 'Na próxima rodada você:
 	* Perderá 3 comandos da quantidade que retirar', 'Fonte Mundo Educação', NULL);`,
-
-`INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
-VALUES('Religião (Ditar certo e errado)',
-'Conceito
-
-Contexto',
-'Desafio', 'fonte', 'Resposta');`,
 
 `INSERT INTO checkpoint(titulo, descricao, desafio, fonte, resposta)
 VALUES('Saúde mental - Engajamento', 
@@ -256,7 +263,7 @@ Ao pesquisar por # como ansiedade, transtornos mentais entre outras, ou consumir
 	* Você ganhará um laço de repetição
 Senão:
 	Você ganhará uma lista com os comandos abaixo:
-		* Ir para a frente
+		* Vá para a frente
 		* Descer
 		* Descer
 		* Girar para a Direita', 'Fonte Techtudo', '11 homens e 1 segredo');`,
@@ -270,6 +277,19 @@ Atualmente, o Bullying digital é uma das principais formas de atingir psicologi
 	* Perderá 4 comandos da quantidade que retirar.', 'Fonte Dicas de Mulher', NULL);`,
 
 `INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
+VALUES('Desigualdade - Doar alimentos',
+'Com a pandemia da COVID-19 muitos foram os impactos causados nas famílias ao redor do mundo, com o fechamento de comércios e o aumento da inflação vários problemas vinham à tona, um dos principais foi os baixos salários para a sobrevivência de famílias de classe média ou baixa em relação a sua alimentação.
+
+Com o auxílio das redes sociais inúmeros formas de auxiliar estas famílias carentes foram divulgadas. Dentre elas a criação e divulgação de ONG como a Gerando Falcões ou apenas a reunião de pessoas dispostas a ajudar. Todas estas iniciativas possuem um objetivo principal, a arrecadação de alimentos para o dia a dia dessas pessoas e só conseguiram ganhar força graças às correntes do bem divulgadas nas redes sociais, sendo assim:',
+'Se você adivinhar o filme “ 👩🏼👨🏼✈➡😱👦🏼🏠”, então:
+	* Você ganhará um laço de repetição
+Senão:
+	Você ganhará uma lista com os comandos abaixo:
+		* Vá para a frente
+		* Girar para a esquerda
+		* Descer', 'Fonte Ecoa UOL', NULL);`,
+
+`INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
 VALUES('Desigualdade - Doações',
 'Na área da saúde uma das coisas mais críticas é a doação de sangue, pois além do estoque necessitar constantemente de reposição, a quantidade de doadores é baixa levando em consideração o recomendado pela OMS. O uso das mídias digitais por atingir um grande público, é fundamental neste contexto.
 
@@ -278,16 +298,9 @@ Quando os usuários compartilham pontos de coletas, projetos sociais que possuem
 	* Você ganhará um laço de repetição
 Senão:
 	Você ganhará uma lista com os comandos abaixo:
-		* Ir para a frente
+		* Vá para a frente
 		* Girar para a esquerda
 		* Pular', 'Fonte Uruguaiana', 'Senhor dos aneis');`,
-
-`INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
-VALUES('Desigualdade (Doação de Sangue)',
-'Conceito
-
-Contexto',
-'Desafio', 'fonte', 'Resposta');`,
 
 `INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
 VALUES('Desigualdade - Pontos de coleta',
@@ -298,19 +311,24 @@ Para salvar suas vidas, as famílias atingidas por tais desastres precisam se lo
 	* Você ganhará um laço de repetição
 Senão:
 	Você ganhará uma lista com os comandos abaixo:
-		* Ir para a frente
+		* Vá para a frente
 		* Pular
 		* Girar para a direita', 'Fonte Toda Materia', NULL);`,
 
 `INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
-VALUES('Desigualdade (Feminismo e salarios iguais)',
-'Conceito
+VALUES('Desigualdade - Salarios iguais',
+'Segundo a ONU as mulheres ganham cerca de 84% do salário do homem, mesmo exercendo funções iguais, no entanto este dado pode ter uma diferença ainda maior dependendo do país ou se a mulher for preta, imigrante ou mãe. Estes dados são preocupantes, pois garantir um salário igual é também garantir um direito e respeito a todos os trabalhadores.
 
-Contexto',
-'Desafio', 'fonte', 'Resposta');`,
+Graças às redes sociais diversos temas passaram a ganhar forma e ser cobrado da sociedade e dos poderosos uma solução mais eficaz. Com os movimentos virtuais estes assuntos passaram a ser tão discutidos e relevante que leis foram criadas garantindo este direito e outros a diversas trabalhadoras ao redor do mundo, sendo assim:',
+'Se você falar rápido e sem errar o trava língua que o grupo escolher, então:
+	* Você ganhará um laço de repetição
+Senão:
+	Você ganhará uma lista com os comandos abaixo:
+		* Descer
+		* Vá para a frente', 'Fonte Politize', NULL);`,
 
 `INSERT INTO checkpoint(titulo, descricao, desafio, fonte, resposta)
-VALUES('Racismo', 
+VALUES('Racismo - Cabelo', 
 'Uma das maiores pressões estéticas da sociedade, em mulheres, tem relação com o cabelo liso e cacheado. Desde muito cedo as crianças escutam críticas e piadas sobre seus cabelos e no mais tardar, durante a adolescência, é comum que utilizem de químicas para o alisar.
 
 Muitos são os comentários feitos sobre pessoas de pele preta nas redes sociais, mas um dos movimentos que vem ganhando um maior destaque é a aceitação capilar, além de penteados com trança afro e transição o que auxilia. A divulgação destes movimentos cria não só um sentimento de apoio como traz também um conforto para as mulheres o que aumenta sua autoestima e aceitação, sendo assim:', 
@@ -322,53 +340,73 @@ Senão:
 		* Descer', 'Fonte Alma Preta', 'Divertida Mente');`,
 
 `INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
-VALUES('Racismo (Macaco no futebol)',
-'Conceito
+VALUES('Racismo - No futebol',
+'Mesmo com várias câmeras apontadas para o gramado e para a arquibancada, atos racistas têm sido cada vez mais frequentes no futebol mundial. Imitar macacos, jogar bananas, gritar ofensas, não são atitudes isoladas ou raras de acontecer com diversos jogadores ao redor do mundo.
 
-Contexto',
-'Desafio', 'fonte', 'Resposta');`,
-
-`INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
-VALUES('Racismo (Black lives matter)',
-'Conceito
-
-Contexto',
-'Desafio', 'fonte', 'Resposta');`,
+Entretanto a divulgação destes atos, principalmente nas redes sociais e a pressão para que o responsável seja punido, é fundamental para o posicionamento frequente dos clubes e inquéritos judiciais mais apurados e de rápida resolução, sendo assim:',
+'Se você desenhar “Chifres” e um jogador adivinhar, então:
+	* Você ganhará um laço de repetição
+Senão:
+	Você ganhará uma lista com os comandos abaixo:
+		* Vá para a frente
+		* Vá para a frente', 'Fonte Cnn Brasil', NULL);`,
 
 `INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
-VALUES('Racismo (apropriação cultural e fiscal de cacho)',
-'Conceito
+VALUES('Racismo - Movimentos',
+'Muitos são os movimentos contra a opressão preto por parte policial ou populacional, dentre estes movimento o Black Lives Matter criado em 2013 tendo como um dos principais objetivo ir contra a violência policial em Los Angeles. Este movimento criou uma força mundial em 2020, após a divulgação da morte de um cidadão preto desarmado por policiais.
 
-Contexto',
-'Desafio', 'fonte', 'Resposta');`,
-
-`INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
-VALUES('Racismo (rivalidade com pelo clara)',
-'Conceito
-
-Contexto',
-'Desafio', 'fonte', 'Resposta');`,
+No Brasil o impacto do movimento, principalmente nas redes sociais, trouxe à tona diversos casos de violência policial em comunidades, desde crianças a adultos. Com o enfraquecimento do tema nas mídias, muitos casos foram abafados e outros que passaram a existir, não tiveram a justiça merecida, sendo assim:',
+'Na próxima rodada você:
+	* Perderá 4 comandos da quantidade que retirar.', 'Fonte Universal UOL', NULL);`,
 
 `INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
-VALUES('Entretenimento (Defender artista errado)',
-'Conceito
+VALUES('Racismo - Apropriação cultural ',
+'A apropriação cultural ocorre quando pessoas de privilégio utilizam elementos de um grupo marginalizado. A apropriação cultural passa a ser um problema quando a utilização destes elementos perdem o sentido original, como os piercings e tatuagens que passaram a ser moda independente da cultura. Ao pensarmos no cenário preto e na moda dos dias atuais vemos diversas pessoas utilizando tranças ou passando pela transição capilar e divulgando estes processos nas redes sociais.
 
-Contexto',
-'Desafio', 'fonte', 'Resposta');`,
-
-`INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
-VALUES('Entretenimento (Abordar temas em filmes)',
-'Conceito
-
-Contexto',
-'Desafio', 'fonte', 'Resposta');`,
+É importante destacar que forçar a utilização destes elementos e até o escurecimento da pele é sim apropriação cultural. No entanto ao publicar procedimentos de transição capilar, muitas mulheres são criticadas por serem brancas ou não e utilizarem seus cabelos naturais, nestes casos estamos falando de condições genéticas, não desvalorização da cultura, sendo assim:',
+'Na próxima rodada você:
+	* Perderá 3 comandos da quantidade que retirar.', 'Fonte Toda Matéria', NULL);`,
 
 `INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
-VALUES('Entretenimento (musicas de desabafo (luisa Sonza) a hater)',
-'Conceito
+VALUES('Racismo - Pardos',
+'De acordo com o IBGE existem 5 grupos de cor ou raça são elas: brancos, pretos, amarelos, indígenas e pardos, quando falamos dos pardos há uma enorme discussão se este termo deveria existir, visto que muitas pessoas de pele mais clara não sofrem racismo como as de pele mais retinta e deveriam se enquadrar em pessoas brancas.
 
-Contexto',
-'Desafio', 'fonte', 'Resposta');`,
+Quando pessoas com características pretas e de pele um pouco mais claras vêm a público nas redes sociais, falar de temas racistas podem algumas vezes ser criticadas por não possuir o “lugar de fala”. É importante destacar que por sofrer menos ataques racistas, ainda o sofrem e dividi-los ou “removê-los” do grupo não irá auxiliar na luta anti racista, sendo assim:',
+'Na próxima rodada você:
+	* Perderá 4 comandos da quantidade que retirar', 'Fonte Câmara dos Deputados', NULL);`,
+
+`INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
+VALUES('Entretenimento - Defender artistas',
+'Todos os artistas possuem um alcance público significativo e adquirem inúmeros fãs em sua caminhada, seja por gostar do seu trabalho ou da pessoa que aparenta ser. Muitas vezes estas pessoas são vistas como intocáveis e até perfeitas por esses fãs, o que pode ser ruim, visto que elas continuam sendo seres humanos como qualquer outro com defeitos, opiniões e suscetíveis ao erro.
+
+Com as redes sociais a proximidade com o artista aumentou e a interação do mesmo, com seu fã tornou-se mais íntima e direta o que é maravilhoso, mas pode tornar-se algo complicado quando o fanatismo cega o público a perceber coisas erradas que o artista faz e passa até a defendê-lo ou atacar outras pessoas que pensam diferente nos comentários de posts, sendo assim:',
+'Na próxima rodada você:
+	* Perderá 4 comandos da quantidade que retirar', 'Fonte Terra', NULL);`,
+
+`INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
+VALUES('Entretenimento - Gostos em comum',
+'Quando falamos do mundo profissional o networking é a base para auxiliar a conseguir futuras parcerias e indicações, após a pandemia da COVID-19 a socialização virtual faz-se necessária e presente diariamente, para isso utilizamos de assuntos em comum que são do nosso interesse e do ouvinte, o que melhor do que filmes, musicas e series para descontrair e iniciar uma conversa?
+
+As relações humanas tendem a se fortalecer quando os indivíduos compartilham de sentimentos e interesses semelhantes e é neste ponto que as redes sociais possuem impacto direto, quando indicações de filmes ou músicas são compartilhadas, outros usuários de gosto semelhante inicia uma conversa e o networking é expandido, auxiliando na interação humana e dependendo da situação no meio profissional também, sendo assim:',
+'Se você encontrar um objeto redondo e verde em 2 min, então:
+	* Você ganhará um laço de repetição
+Senão:
+	Você ganhará uma lista com os comandos abaixo:
+		* Vá para a frente
+		* Girar para a direita
+		* Pular', 'Fonte Fortes tecnologias', NULL);`,
+
+`INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
+VALUES('Entretenimento - Músicas',
+'Muitas são as inspirações para compor uma música, dentre elas as principais são situações vividas, em especial relações boas ou ruins. Quando estas composições remetem a relações de conhecimento público muitas são as polêmicas que a envolvem, principalmente se o foco for um término.
+
+Situações como as de Luísa Sonza e Olivia Rodrigo e seus álbuns com músicas de desabafo, geram inúmeras polêmicas e cancelamento nas redes sociais e cabe ao público auxiliar e ajudar estas celebridades com comentários positivos e que os ajudem a enfrentar o hater sofrido em vez de alimentá-lo com teorias, sendo assim:',
+'Se você desenhar “Tossir” e outro jogador adivinhar, então:
+	* Você ganhará um laço de repetição
+Senão:
+	Você ganhará uma lista com os comandos abaixo:
+		* Vá para a frente
+		* Descer', 'Fonte Toca da Villa', 'Resposta');`,
 
 `INSERT INTO checkpoint(titulo, descricao, desafio, fonte, resposta)
 VALUES('LGBT - Homofobia', 
@@ -380,17 +418,15 @@ VALUES('LGBT - Homofobia',
 
 `INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
 VALUES('LGBT - Ameaças',
-'Conceito
+'Se assumir parte da comunidade LGBTQIA+ é um processo difícil e cheio de obstáculos, mas infelizmente eles não somem após a exposição para o mundo, pelo contrário o que era uma briga interna passa a ser uma guerra externa com pessoas julgando e até ameaçando a vida destas pessoas.
 
-Contexto',
-'Desafio', 'fonte', 'Resposta');`,
-
-`INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
-VALUES('LGBT - Critica a musicas',
-'Conceito
-
-Contexto',
-'Desafio', 'fonte', 'Resposta');`,
+Muitos são os influenciadores e celebridades que assumiram ser do vale e ajudam de certa forma a aceitação por parte da sociedade. Ao visualizar conteúdos de pessoas com muita ou pouca influência social, é perceptível as muitas ameaças e assédios deixadas apenas pela orientação sexual do outro, dessa forma faz-se importante os comentários de elogios ao conteúdo ou a pessoa para que tais comentários não o impacte e auxilia na mudança de pensamento destas pessoas maldosas, sendo assim',
+'Se você desenhar um controle remoto e um jogador adivinhar, então:
+	* Você ganhará um laço de repetição
+Senão:
+	Você ganhará uma lista com os comandos abaixo:
+		* Vá para a frente
+		* Descer', 'Fonte Olhar digital', NULL);`,
 
 `INSERT INTO checkpoint(titulo, descricao, desafio, fonte, resposta)
 VALUES('Adoção - animal', 
@@ -403,7 +439,7 @@ Os outros jogadores irão escolher uma música e reproduzi-la até um certo pont
 	  * Você ganhará um laço de repetição
   Senão:
 	  Ganhará um comando, sendo ele:
-		  * Ir para frente', 'Fonte Biofarm', NULL);`,
+		  * Vá para a frente', 'Fonte Biofarm', NULL);`,
 
 `INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
 VALUES('Adoção - adolescentes',
@@ -414,8 +450,8 @@ Quando as redes sociais são usadas para divulgação dessas causas, mais pessoa
 	Você ganhará um laço de repetição
 Senão:
 	Você ganhará uma lista com os comandos abaixo:
-		* Ir para a frente
-		* Ir para a frente', 'Fonte Adoção Tardia', NULL);`,
+		* Vá para a frente
+		* Vá para a frente', 'Fonte Adoção Tardia', NULL);`,
 
 `INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
 VALUES('Empreendedorismo - Apoio', 
@@ -439,7 +475,7 @@ Apesar de ser cômodo e com preços mais atrativos, compras online possuem diver
 	Você ganhará um laço de repetição
 Senão:
 	Você ganhará uma lista com os comandos abaixo:
-		* Ir para a frente
+		* Vá para a frente
 		* Girar para direita', 'Fonte Canaltech', 'MIB: Homens de preto');`,
 
 ];
