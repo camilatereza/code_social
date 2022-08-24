@@ -44,15 +44,14 @@ export const Styles = StyleSheet.create({
         borderRadius: normalize(20),
         justifyContent: 'center',
     },
-    commands_data:(colorScheme) =>({
+    commands_data:{
         //estilo do tex=>to comandos
         color: theme.colors.heading,
-        // color: colorScheme === true ? "#000" : theme.colors.heading,
         fontFamily: theme.fonts.text,
         fontSize: 13,
         margin: normalize(3),
         marginVertical: normalize(5)
-    }),
+    },
     chosen: {
         //painel de dados escolhidos
         fontFamily: theme.fonts.text,
@@ -93,6 +92,5 @@ export const Styles = StyleSheet.create({
         fontWeight: 'bold',
         color: theme.colors.heading,
         fontFamily: theme.fonts.text
-    },
-
+    }
 })
