@@ -25,7 +25,7 @@ export const Styles = StyleSheet.create({
         color: theme.colors.heading,
         fontFamily: theme.fonts.title,
         textAlign: 'center',
-        fontSize: 45,
+        fontSize: 35,
         marginBottom: normalize(25),
         marginTop: normalize(70)
     },
@@ -44,18 +44,19 @@ export const Styles = StyleSheet.create({
         borderRadius: normalize(20),
         justifyContent: 'center',
     },
-    commands_data: {
-        //estilo do texto comandos
+    commands_data:(colorScheme) =>({
+        //estilo do tex=>to comandos
         color: theme.colors.heading,
+        // color: colorScheme === true ? "#000" : theme.colors.heading,
         fontFamily: theme.fonts.text,
-        fontSize: 18,
+        fontSize: 13,
         margin: normalize(3),
         marginVertical: normalize(5)
-    },
+    }),
     chosen: {
         //painel de dados escolhidos
         fontFamily: theme.fonts.text,
-        fontSize: 13,
+        fontSize: 15,
         color: theme.colors.selectItem,
         height: normalize(180),
         width: normalize(270),
@@ -88,9 +89,10 @@ export const Styles = StyleSheet.create({
     },
     btnTexto: {
         //texto de cada botão
-        fontSize: 20,
+        fontSize: 15,
         fontWeight: 'bold',
         color: theme.colors.heading,
         fontFamily: theme.fonts.text
-    }
+    },
+
 })

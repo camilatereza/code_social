@@ -26,7 +26,7 @@ export const styles = StyleSheet.create({
         //estilo dos comandos
         color: theme.colors.heading,
         fontFamily: theme.fonts.title,
-        fontSize: 18,
+        fontSize: 15,
         textAlign: "center",
         margin: normalize(10)
     },
@@ -34,7 +34,7 @@ export const styles = StyleSheet.create({
         //estilo dos comandos
         color: theme.colors.heading,
         fontFamily: theme.fonts.text,
-        fontSize: 15,
+        fontSize: 12,
         textAlign: 'justify',
         marginHorizontal: normalize(10),
         marginTop: normalize(5)
@@ -43,7 +43,7 @@ export const styles = StyleSheet.create({
         //estilo dos comandos
         color: theme.colors.heading,
         fontFamily: theme.fonts.text,
-        fontSize: 16,
+        fontSize: 12,
         textAlign: "right",
         margin: normalize(20)
     },
@@ -58,7 +58,7 @@ export const styles = StyleSheet.create({
         borderRadius: normalize(9),
     },
     btnTexto: {
-        fontSize: 20,
+        fontSize: 15,
         fontWeight: 'bold',
         color: theme.colors.heading,
         fontFamily: theme.fonts.text
