@@ -215,7 +215,7 @@ Senão:
 		* Girar para a direita', 'Fonte Objetivo Sorocaba', NULL);`,
 
 `INSERT INTO checkpoint (titulo, descricao, desafio, fonte, resposta)
-VALUES('Relacionamentos (Novos modelos de relacionamento)',
+VALUES('Relacionamentos - Novos modelos',
 'Relacionar-se faz parte da essência humana, seja por meio de amizades ou relacionamentos amorosos, sempre buscamos a socialização. Ultimamente devido a liberdade de expressão nas redes sociais, coisas que já existiam começaram a ganhar destaque e serem discutidas, uma delas são as formas de relacionamento fora a monogamia tradicional.
 
 Varios casais passaram a compartilhar suas rotinas e seu modelo de relação sendo ele aberto, poligamia, entre o mesmo sexo, dentre outros. Infelizmente muitas pessoas consomem estes conteúdos com curiosidade e buscam criticar, ofender e até ameaçar tais casais, sendo assim:',
