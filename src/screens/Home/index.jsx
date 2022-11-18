@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import CheckBox from 'expo-checkbox';
 import {
     Text,
     View,
@@ -10,8 +10,8 @@ import { sortCommands } from "../../utils/commands";
 import { Styles } from "./styles";
 
 export function Home() {
-    const [instructions, setInstruction] = useState()
-    const [ordem, setOrdem] = useState([])
+    const [instructions, setInstruction] = useState();
+    const [ordem, setOrdem] = useState([]);
     const empty = ["", "", "", "", "", "", "", "",];
 
     function render() {
@@ -46,20 +46,19 @@ export function Home() {
                     style={Styles.commands}
                 >
                     {render().map((item, index) => {
+                        const [isChecked, setChecked] = useState(false);
+
                         return (
                             <View
                                 incolun
                                 key={index}
                                 flexDirection={'row'}
                             >
-                                <TouchableOpacity
+                                <CheckBox
                                     style={Styles.selector}
+                                    value={isChecked}
+                                    onValueChange={setChecked}
                                     key={index}
-                                    activeOpacity={0.10}
-                                    onPress={() => {
-                                        temp.push(item.text)
-                                        alert('Você selecionou: ' + item.text)
-                                    }}
                                 />
                                 <Text style={Styles.commands_data}>
                                     {item.text}
@@ -72,7 +71,7 @@ export function Home() {
 
                 <View style={Styles.bntArea}>
 
-                    {/* Botão de play */}
+                    {/* Botão de novos comandos */}
                     <TouchableOpacity
                         style={Styles.button}
                         activeOpacity={0.5}
